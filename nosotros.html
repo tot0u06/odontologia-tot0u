@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia, la misión y el equipo de profesionales de Odontología Integral.">
+    <meta name="keywords" content="nosotros, equipo, clínica dental, filosofía, misión, odontólogos">
+    <meta name="author" content="Odontología Integral">
+    <title>Nosotros | Odontología Integral</title>
+    <!-- Enlace a la hoja de estilos compilada -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">Odontología Integral</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <button id="menu-button" class="mobile-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección "Nosotros" -->
+        <section class="about-section">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h1>Nuestra Filosofía</h1>
+                    <p>
+                        En Odontología Integral, creemos en una atención que va más allá de la salud bucal. Nos enfocamos en el bienestar integral de cada paciente. Desde nuestros inicios en 2010, hemos combinado la tecnología más avanzada con un trato cercano y humano.
+                    </p>
+                    <p>
+                        Nuestra misión es educar a nuestros pacientes sobre la importancia de la prevención y brindarles tratamientos de la más alta calidad, con total transparencia en cada paso. Queremos que tu visita al dentista sea una experiencia positiva y relajante.
+                    </p>
+                </div>
+                <div class="about-image-container">
+                    <img src="https://www.aguilardentalsalut.com/wp-content/uploads/2015/06/grupo-doctores.jpg" alt="Imagen de la clínica dental con personal amable" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de equipo -->
+        <section class="team-section">
+            <div class="container">
+                <h2>Conoce a Nuestro Equipo</h2>
+                <div class="team-grid">
+                    <!-- Miembro 1 -->
+                    <div class="team-member-card">
+                        <img src="https://www.shutterstock.com/image-photo/professional-male-dentist-smiling-camera-260nw-631494977.jpg" alt="Foto del Dr. Juan Pérez" class="team-member-photo">
+                        <h3>Dr. Juan Pérez</h3>
+                        <p class="team-member-title">Odontólogo General</p>
+                        <p class="team-member-bio">Especialista en restauraciones estéticas y endodoncia. Con 15 años de experiencia.</p>
+                    </div>
+                    <!-- Miembro 2 -->
+                    <div class="team-member-card">
+                        <img src="https://www.shutterstock.com/image-photo/european-mid-dentist-woman-smiling-260nw-1938573190.jpg" alt="Foto de la Dra. Ana Gómez" class="team-member-photo">
+                        <h3>Dra. Ana Gómez</h3>
+                        <p class="team-member-title">Ortodoncista</p>
+                        <p class="team-member-bio">Dedicada a crear sonrisas perfectas con las últimas técnicas de ortodoncia invisible y tradicional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Odontología Integral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

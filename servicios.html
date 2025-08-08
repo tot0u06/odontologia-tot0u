@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre todos los tratamientos y servicios de odontología que ofrecemos, desde limpiezas hasta implantes.">
+    <meta name="keywords" content="servicios, tratamientos dentales, odontología general, estética dental, implantes, ortodoncia">
+    <meta name="author" content="Odontología Integral">
+    <title>Servicios | Odontología Integral</title>
+    <!-- Enlace a la hoja de estilos compilada -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">Odontología Integral</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <button id="menu-button" class="mobile-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de servicios detallados -->
+        <section class="services-section">
+            <div class="container">
+                <h1>Nuestros Servicios</h1>
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3>Odontología General</h3>
+                        <p>
+                            Mantenemos tu boca saludable con limpiezas profesionales, empastes, extracciones y chequeos regulares.
+                        </p>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase-medical"></i>
+                        </div>
+                        <h3>Endodoncia</h3>
+                        <p>
+                            Tratamientos de conducto para salvar piezas dentales infectadas o dañadas, aliviando el dolor y previniendo extracciones.
+                        </p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Estética Dental</h3>
+                        <p>
+                            Mejora la apariencia de tu sonrisa con blanqueamientos, carillas de porcelana y resinas estéticas.
+                        </p>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h3>Ortodoncia</h3>
+                        <p>
+                            Corregimos la posición de tus dientes y mandíbula con brackets tradicionales y alineadores invisibles.
+                        </p>
+                    </div>
+                    <!-- Servicio 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h3>Implantes Dentales</h3>
+                        <p>
+                            La solución más avanzada para reemplazar dientes perdidos y recuperar tu función masticatoria y estética.
+                        </p>
+                    </div>
+                    <!-- Servicio 6 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Odontopediatría</h3>
+                        <p>
+                            Atención dental especializada para los más pequeños, en un ambiente amigable y divertido para su primera visita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Odontología Integral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

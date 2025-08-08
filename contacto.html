@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para programar tu cita, resolver tus dudas o visitarnos.">
+    <meta name="keywords" content="contacto, formulario, dirección, teléfono, correo, email">
+    <meta name="author" content="Odontología Integral">
+    <title>Contacto | Odontología Integral</title>
+    <!-- Enlace a la hoja de estilos compilada -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">Odontología Integral</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <button id="menu-button" class="mobile-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de contacto -->
+        <section class="contact-section">
+            <div class="container contact-content">
+                <div class="contact-form-container">
+                    <h1>Contáctanos</h1>
+                    <p>Completa el formulario para agendar una cita o para resolver cualquier duda que tengas.</p>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Nuestra Ubicación</h2>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Dirección: Palermo, Ciudad Autónoma de Buenos Aires, Argentina
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> Teléfono: +54 11 2346-9761
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> Email: info@odontologiaintegral.com
+                    </p>
+                    <div class="map-container">
+                        <!-- Mapa de Google Maps (ejemplo) -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016881198595!2d-58.38159238479707!3d-34.6037229804597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac4f621e25d%3A0xc4a38f322f990a4!2sObelisco!5e0!3m2!1ses!2sar!4v1628174523000!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Odontología Integral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

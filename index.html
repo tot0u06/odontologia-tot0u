@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odontología Integral - Tu clínica dental de confianza. Ofrecemos tratamientos completos y personalizados en un ambiente cálido.">
+    <meta name="keywords" content="odontología, dentista, salud bucal, clínica dental, tratamientos dentales, odontología integral, sonrisa">
+    <meta name="author" content="Odontología Integral">
+    <title>Inicio | Odontología Integral</title>
+    <!-- Enlace a la hoja de estilos compilada desde SASS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Incluye el CDN de Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">Odontología Integral</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <!-- Menú hamburguesa para móviles -->
+            <button id="menu-button" class="mobile-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Principal/Hero -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1>Tu Sonrisa, Nuestra Pasión</h1>
+                <p>Ofrecemos tratamientos dentales completos y personalizados para que luzcas una sonrisa saludable y radiante.</p>
+                <a href="contacto.html" class="cta-button">Pide tu cita hoy</a>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios Destacados -->
+        <section class="destacados-section">
+            <div class="container">
+                <h2>Nuestros Servicios Destacados</h2>
+                <div class="destacados-grid">
+                    <!-- Tarjeta de Servicio 1 -->
+                    <div class="destacados-card">
+                        <div class="destacados-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3>Odontología General</h3>
+                        <p>Limpiezas, revisiones y tratamientos preventivos para mantener tu salud bucal al día.</p>
+                    </div>
+                    <!-- Tarjeta de Servicio 2 -->
+                    <div class="destacados-card">
+                        <div class="destacados-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Estética Dental</h3>
+                        <p>Blanqueamientos, carillas y otros tratamientos para mejorar la apariencia de tu sonrisa.</p>
+                    </div>
+                    <!-- Tarjeta de Servicio 3 -->
+                    <div class="destacados-card">
+                        <div class="destacados-icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h3>Implantes y Prótesis</h3>
+                        <p>Soluciones avanzadas para reemplazar dientes perdidos y restaurar la función completa de tu boca.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Valores -->
+        <section class="valores-section">
+            <div class="container">
+                <h2>Nuestros Valores</h2>
+                <div class="valores-grid">
+                    <!-- Tarjeta de Valor 1 -->
+                    <div class="valor-card">
+                        <h3>Confianza</h3>
+                        <p>Construimos relaciones duraderas con nuestros pacientes, basadas en la honestidad y la transparencia.</p>
+                    </div>
+                    <!-- Tarjeta de Valor 2 -->
+                    <div class="valor-card">
+                        <h3>Innovación</h3>
+                        <p>Nos mantenemos actualizados con las últimas técnicas y tecnologías para ofrecer los mejores tratamientos.</p>
+                    </div>
+                    <!-- Tarjeta de Valor 3 -->
+                    <div class="valor-card">
+                        <h3>Cuidado</h3>
+                        <p>Cada paciente es único. Brindamos una atención personalizada y cálida en un ambiente relajado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Odontología Integral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
