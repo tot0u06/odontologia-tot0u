@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/* ======================== */
-/* Variables y Estilos Base (Se asume importados o definidos) */
-/* ======================== */
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -162,9 +160,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-/* ======================== */
-/* Sección de Nuestro Equipo */
-/* ======================== */
+
 .equipo-section {
   padding: 4rem 2rem;
   text-align: center;
